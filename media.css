@@ -1,0 +1,99 @@
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  /* ========= */
+  @media (max-width: 768px) {
+    nav {
+        padding:10px 0;
+    }
+    .nav-btn button {
+        padding: 5px 15px;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .suite-about {
+flex-direction: column;
+height: auto;
+    }
+    .about-logo img {
+  display: none;
+    }
+    .about-numbers {
+        flex-direction: row;
+        gap: 30px;
+    }
+    .about-numbers .companies h1 {
+      font-size:40px;
+      }
+      .about-numbers .companies h5{
+        font-size: 14px;
+    }
+    .suite-about .about p{
+      width: 100%;
+  }
+    .content {
+flex-direction: column;
+height: auto;
+    }
+    .content img {
+        position: relative;
+        top:0%;
+        left: 0px;
+    }
+    .content-discussion {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        color: rgb(255, 255, 255);
+        width: 100%;
+    position: relative;
+    right: 0px;
+    }
+    .footer-content {
+      margin-top: 30px;
+      padding: 10px;
+  }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    main {
+      height: 60vh;
+  }
+  .suite-about {
+height: 60vh;
+}
+.suite-about .about p{
+  width: 80%;
+}
+  .about-logo img {
+display: none;
+}
+.content {
+  height: 45vh;
+}
+.content-discussion {
+  padding: 20px;
+  width: 60%;
+}
+  }

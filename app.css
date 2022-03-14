@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --blue-color :#172339;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+
+
+/* Start Header */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+nav .logo {
+    cursor: pointer;
+}
+.nav-btn button {
+    border: 1px solid var(--blue-color);
+    background-color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--blue-color);
+    transition: .4s ease-in-out;
+    border-radius: 8px;
+}
+.nav-btn button:hover {
+    background-color: var(--blue-color);
+    color: white;
+    transform: translateX(5px);
+}
+/* End Header */
+
+
+/* Start Suite-About */
+main {
+    position: relative;
+    height: 90vh;
+}
+.suite-about {
+    width: 100%;
+height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.suite-about .about h1 {
+color: var(--blue-color);
+font-size: 70px;
+line-height: 1.1;
+padding-bottom: 30px;
+}
+.suite-about .about p{
+    padding-bottom: 30px;
+    color: #203353;
+    line-height: 1.5;
+    width: 50%;
+    font-size: 17px;
+    font-weight: 500;
+}
+.about button{
+    border: none;
+    background-color: var(--blue-color);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    transition: .4s ease-in-out;
+    border-radius: 8px;
+}
+
+.about-logo img {
+    position: absolute;
+    left: 60%;
+    top: 60%;
+    transform: translate(-60%, -60%);
+    height: auto;
+    z-index: -1;
+    border-radius: 8px;
+}
+.about-numbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    text-align: start;
+}
+.about-numbers .companies {
+    line-height: 1.3;
+}
+.about-numbers .companies h1 {
+color: var(--blue-color);
+font-size: 70px;
+}
+.about-numbers .companies h5{
+    color: #203353;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+/* End Suite-About */
+
+
+/* Start Content */
+.content {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    background-color: var(--blue-color);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.content img {
+    position: absolute;
+    top: -10%;
+    left: 40px;
+}
+.content-discussion {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 50%;
+position: absolute;
+right: 10px;
+}
+.content-discussion h2 {
+    font-size: 70px;
+    font-weight: 400;
+    padding-bottom: 40px;
+}
+.content-discussion span {
+font-weight: 600;
+}
+.content-discussion p {
+    padding-bottom: 40px;
+font-size: 20px;
+line-height: 1.7;
+}
+.content-discussion h4 {
+padding-bottom: 10px;
+}
+.content-discussion h3 {
+font-weight: 300;
+}
+/* End Content */
+
+
+/* Start Footer */
+.footer-content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+.footer-logo {
+    cursor: pointer;
+}
+.footer-content h5 {
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--blue-color);
+}
+.footer-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+footer span {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+footer span:hover{
+    transform: translateY(-20px);
+    color: var(--blue-color);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+/* End Footer */
